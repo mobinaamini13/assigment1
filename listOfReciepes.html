@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>لیست دستور غذا</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Tahoma, sans-serif;
+      
+    }
+
+    .navbar {
+      background-color: rgb(209, 77, 77);
+    }
+
+    .list {
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      font-size: 20px;
+      padding: 10px 0;
+    }
+
+    .list li a {
+      padding: 10px;
+      text-decoration: none;
+      color: azure;
+      font-weight: bold;
+    }
+
+    .recipelistsection {
+      padding: 20px;
+      text-align: center;
+      
+    }
+
+    .filter-box {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .recipe_card {
+      padding: 20px;
+      text-align: center;
+    }
+
+    img {
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .intro{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tt{
+      display: inline-block;
+      text-decoration: none;
+      background-color: rgb(230, 75, 75);
+      color: white;
+      border-radius: 16px;
+      transition:background_color 0.3s
+      padding: 10px 20px;
+    
+    }
+    ..tt:hover{
+      background-color: #c94c60;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="list">
+      <li><a href="index.html">خانه</a></li>
+      <li><a href="add recipe .html">افزودن دستور غذا</a></li>
+      <li><a href="listOfReciepes.html">لیست دستورها</a></li>
+    </ul>
+  </nav>
+
+  <section class="recipelistsection">
+    <h2>لیست دستور غذا</h2>
+    <div class="filter-box">
+      <label for="category_filter">دسته‌بندی:</label>
+      <select name="category_filter" id="category_filter">
+        <option value="all">همه</option>
+        <option value="desert">دسر</option>
+        <option value="main">غذای اصلی</option>
+        <option value="vegan">وگان</option>
+      </select>
+    </div>
+  </section>
+<div class="intro">
+    
+  <div class="recipe_card">
+    <img src="maka2.jpg" alt="ماکارونی" width="250px" height="180px">
+    <p>ماکارونی خوشمزه با طعم بی‌نظیر</p>
+    <a href="recipe details.html" class="tt">مشاهده</a>
+  </div>
+  <div class="recipe_card">
+    <img src="cake.jpg" alt="کیک" width="250px" height="180px">
+    <p>دسر شیرین ودلچسپ برای مناسبت های خاص</p>
+    <a href="recipe details.html" class="tt">مشاهده</a>
+  </div>
+</div>
+</body>
+</html>

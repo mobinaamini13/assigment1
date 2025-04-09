@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دفترچه اشپزی من</title>
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            
+            background-color: antiquewhite;
+        }
+        .navbar{
+            background-color: rgb(209, 77, 77);
+        }
+        .navlist{
+            margin: 0px;
+            list-style-type: none;
+            display: flex;
+            gap: 440px;
+            font-size: 20px;
+        }
+        .navlist a{
+            padding: 10px;
+        }
+        .navlist li a{
+            text-decoration: none;
+            color: azure;
+        }
+        headar{
+            text-align: center;
+            padding: 15px;
+        }
+        .qq{
+            text-align: center;
+        }
+        .ww{
+            text-align: center;
+        }
+        .featured{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 30px auto;
+            background-color: aliceblue;
+            border-radius: 16px;
+            box-shadow: 0 6px  12px rgba(0, 0,0, 0);
+
+        }
+        .recipeimage{
+        
+            
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+        }
+            .recipecontent{
+                max-width: 500px ;
+
+            }
+            
+            
+            
+            
+        .recipecontent h2{
+            font-size: 24px ;
+            color: #333;
+            margin-bottom: 15px;
+
+
+        }
+        .recipecontent p{
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .viewbotton{
+            display: inline-block;
+            background-color: #f67280;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition:background_color 0.3s
+
+        }
+            .viewbotton:hover{
+                background-color: #c94c60;
+            }
+            .popularrecipes{
+                max-width: 1200px;
+                margin: 50px auto;
+                padding: 20px;
+                background-color: #fffaf1;
+                border-radius: 16px;
+                box-shadow: 0 6px  12px rgba(0,0, 0, 0) ;
+                direction: rtl;
+
+            }
+            .popularrecipes h2{
+                    font-size: 26px;
+                    text-align: center;
+                    margin-bottom: 30px;
+                    color: #444;
+            }
+            .recipecards{
+                display: flex;
+                gap: 30px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .recipecard{
+                width: 280px;
+                background-color: #ffffff;
+                border-radius: 12px;
+                overflow: hidden;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            .recipecard img{
+                    width: 100%;
+                    height: 180px;
+                    object-fit: cover;
+            }
+                .recipecard h3{
+                    font-size: 20px;
+                    margin: 15px 0 10px;
+                    color: #333;
+                }
+                    .recipecard p{
+                        font-size: 14px;
+                        color: #666;
+                        padding: 0 10px;
+                        margin-bottom: 15px;
+                    }
+                    .view{
+                        background-color: #f67280;
+                        color: white;
+                        padding: 8px 16px;
+                        border-radius: 6px;
+                        text-decoration: none;
+                        transition: background_color 0.3s;
+
+                    }
+                    .recipecard .view:hover{
+                        background-color: #c94c94;
+                    }
+                    .featuredcategories{
+                        max-width: 1200px;
+                        margin: 40px auto;
+                        padding: 20px;
+                        background-color: #fdf6e3;
+                        border-radius: 16px;
+                        box-shadow: 0 4px 10px rgba(0, 0, 0, 0);
+                        text-align: center;
+                        direction: rtl;
+
+
+                    }
+                    .featuredcategories h2{
+                        font-size: 24px;
+                        margin-bottom: 20px;
+                        color: #444;
+                    }
+                    .categorylist{
+                        list-style: none;
+                        padding: 0;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 40px;
+
+                    }
+                    .categorylist li {
+                        display: inline-block;
+                        background-color: #f67280;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 8px;
+                        text-decoration: none;
+                        font-size: 16px;
+                        transition: background_color 0 3s;
+
+                    }
+                    .categorylist li a:hover{
+                        background-color: #c94c60;
+                    }
+                    .zz{
+                        background-color: rgb(110, 111, 112);
+                        text-align: center;
+                        padding: 20px;
+                        color: rgb(240, 234, 235);
+                       font-size: 15px;
+                       font-style: oblique;
+                       
+                    }
+                    .xx{
+                        background-color: aliceblue;
+                        text-align: center;
+                        padding: 20px;
+                        color: rgb(245, 110, 132);
+                       font-size: 15px;
+                                             
+                    }
+                    .bb{
+                        background-color: #c94c60;
+                        text-align: center;
+                    }
+                  
+                    
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+       
+       <ul class="navlist">
+        <li><a href="index.html">خانه</a></li>
+        <li><a href="add recipe .html">افزودن دستور غذا </a></li>
+        <li><a href="listOfReciepes.html">لیست دستورها</a></li>
+       </ul> 
+       
+
+    </nav>
+   
+    <header class="headar">
+        <h1 class="qq">به دفترچه اشپزی من خوش امدید</h1>
+            <p class="ww">دستور غذاهای خوشمزه برای هر مناسبت را کشف کنید</p>
+    </header>
+
+
+    <section class="featured">
+    <div class="recipeimage">
+        
+        <img src="maka2.jpg" alt="ماکارانی مخصوص" width="250px" height="180px">
+    </div>
+        <div class="recipecontent">
+            <h2>دستور غذای  روز:ماکارانی مخصوص</h2>
+            <p>یک غذای ساده وخوشمزه با سس مخصوص خانگی</p>
+            <a href="recipe details.html" class="viewbotton">مشاهده دستور کامل</a>
+        </div>
+    </section>
+      
+       
+    
+    
+   
+
+
+
+        <section class="popularrecipes">
+            <h2> محبوب ترین دستورها</h2>
+            <div class="recipecards">
+                <div class="recipecard">
+                    <img src="kabb.jpg" alt=" کباب" width="250px" height="180px">
+                    <h3> کباب</h3>
+                    <p>دستور لذیذ وپر طررفدار برای دوست داران گوشت</p>
+                    <a href="recipe details.html" class="view">مشاهده</a >
+                </div>
+               
+                   
+                    
+
+                
+                <div class="recipecard">
+                    <img src="cake.jpg" alt=" کیک" width="250px" height="180px">
+                    <h3>کیک شکلاتی</h3>
+                    <p>یک کیک خوشمزه برای دسر</p>
+                    <a href="recipe details.html" class="view">مشاهده</a>
+                            <div>
+
+            </div>
+        </section>
+
+
+
+
+            <section class="featuredcategories">
+                <h2>دسته بندی های ویژه</h2>
+                <div class="categorybuttons">
+                    <a href="#"></a>
+                    
+                    <ul class="categorylist">
+                        <a href="#"> <li>دسرها</li></a>
+                        <a href="#"> <li>وگات</li></a>
+                        <a href="#"> <li> غذاهای سریع</li></a>
+                        <a href="#">   <li>غذاهای سنتی </li>
+                        </a>
+                       
+                    </ul>
+                </div>
+            </section>
+           
+           
+           
+         
+            <div class="zz">
+                <section class="site">
+                    <h2>درباره سایت</h2>
+                    <p>ما اینجا جمع شده ایم تا دستورهای خوشمزه و اسان را با شما به اشتراک بگزاریم هرکسی میتونه غذا درست کنه </p>
+                </section>
+            </div>
+           
+
+                    <div class="xx">
+                        <section class="aaa">
+                            <h2>عضویت در خبرنامه</h2>
+                            <form action="">
+                                <input type="email" placeholder="ایمیل شما">
+                                <input type="submit" placeholder="عضویت">
+            
+                                </button>
+            
+                            </form>
+                        </section>
+                    </div>
+           
+            <footer class="bb"> 
+                <p>تمام حقوق محفوظ است  طراحی شده توسط من</p>
+                <p>
+                    تماس با ما 
+                </p>
+            </footer>
+                    
+               
+    
+</body>
+</html>
